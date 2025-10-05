@@ -6,21 +6,24 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #d0ad3a, #b25131);
-            color: #f8f8f8;
+            background: linear-gradient(135deg, #e3b23c, #a63e2b);
+            color: #fff;
             margin: 0;
             padding: 0;
             text-align: center;
+            transition: background 0.5s ease;
         }
 
         header {
-            background: #c1730e;
+            background: linear-gradient(90deg, #c1730e, #d48a2b);
             padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
 
         header h1 {
             margin: 0;
             font-size: 2.5em;
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
         }
 
         p {
@@ -38,15 +41,17 @@
 
         a {
             text-decoration: none;
-            color: #f8f8f8;
-            background: #b1470e;
-            padding: 10px 15px;
-            border-radius: 8px;
+            color: #fff;
+            background: linear-gradient(90deg, #b1470e, #d36724);
+            padding: 10px 18px;
+            border-radius: 10px;
             transition: 0.3s;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
         }
 
         a:hover {
-            background: #74b2e2;
+            background: linear-gradient(90deg, #74b2e2, #3b91d1);
+            transform: scale(1.05);
         }
 
         img {
@@ -58,37 +63,43 @@
         footer {
             margin-top: 30px;
             padding: 15px;
-            background: #b1470e;
+            background: linear-gradient(90deg, #b1470e, #d46c2a);
+            position: relative;
+        }
+
+        .music-control {
+            margin-top: 15px;
+        }
+
+        .music-btn {
+            background: #fff;
+            color: #b1470e;
+            font-weight: bold;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .music-btn:hover {
+            background: #ffd59b;
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
     <header>
-        <h1> Tik Tok mUsic хиты</h1>
+        <h1>Tik Tok mUsic хиты</h1>
     </header>
 
     <p>Подборка:</p>
 
-    <h2>✨ Топ-3  </h2>
+    <h2>✨ Топ-3</h2>
     <ul>
         <li>
             <a href="https://youtu.be/-QZML09vv6A?si=6RPmCgBdmZcvVdJu" target="_blank">
                 Dasdinlovee - KETPE
-            </a>
-        </li>
-        <li>
-            <a href="https://youtu.be/iMGRJKF0tGA?si=hiw_I6kyN1J2jB58" target="_blank">
-                Кайрат Нуртас - Алматынын тундеры ай
-            </a>
-        </li>
-        <li>
-            <a href="https://youtu.be/eCT4puTiApo?si=1O6YO941c-7txR7N" target="_blank">
-                M'Dee - Нужна
-            </a>
-        </li>
-         <li>
-            <a href="https://youtu.be/-QZML09vv6A?si=6RPmCgBdmZcvVdJu" target="_blank">
-                
             </a>
         </li>
         <li>
@@ -109,5 +120,28 @@
 
     <footer>
         <p>botayym</p>
+        <div class="music-control">
+            <audio id="bg-audio" src="music.mp3" loop></audio>
+            <button class="music-btn" id="music-btn">🎵 Включить музыку</button>
+        </div>
+    </footer>
+
+    <script>
+        const audio = document.getElementById('bg-audio');
+        const btn = document.getElementById('music-btn');
+
+        btn.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play().catch(err => console.log('Autoplay blocked', err));
+                btn.textContent = "🔇 Выключить музыку";
+            } else {
+                audio.pause();
+                btn.textContent = "🎵 Включить музыку";
+            }
+        });
+    </script>
+</body>
+</html>
+ <p>botayym</p>
 
 

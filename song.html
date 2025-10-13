@@ -2,146 +2,163 @@
 <html lang="kk">
 <head>
     <meta charset="UTF-8">
-    <title>Подбор музыки</title>
+    <title>Музыкальный Микс</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #e3b23c, #a63e2b);
-            color: #fff;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: linear-gradient(120deg, #1d4350 0%, #a43931 100%);
+            color: #f3f3f3;
             margin: 0;
             padding: 0;
+            min-height: 100vh;
             text-align: center;
-            transition: background 0.5s ease;
         }
 
         header {
-            background: linear-gradient(90deg, #c1730e, #d48a2b);
-            padding: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            background: #20232a;
+            padding: 35px 0 18px 0;
+            box-shadow: 0 2px 14px rgba(0,0,0,0.18);
         }
 
         header h1 {
             margin: 0;
             font-size: 2.5em;
-            text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+            letter-spacing: 2px;
+            color: #ff9f43;
+            text-shadow: 1px 2px 8px #a43931;
         }
 
-        p {
-            font-size: 18px;
+        p, h2 {
+            color: #fff176;
+            margin-bottom: 13px;
         }
 
         ul {
-            list-style-type: none;
-            padding: 0;
+            list-style-type: disc;
+            padding-left: 0;
+            margin-bottom: 35px;
         }
 
         ul li {
-            margin: 15px 0;
+            margin: 19px 0;
         }
 
         a {
             text-decoration: none;
             color: #fff;
-            background: linear-gradient(90deg, #b1470e, #d36724);
-            padding: 10px 18px;
-            border-radius: 10px;
-            transition: 0.3s;
-            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            background: #a43931;
+            padding: 11px 20px;
+            border-radius: 17px;
+            font-weight: 600;
+            font-size: 1.09em;
+            box-shadow: 0 2px 10px rgba(164,57,49,0.18);
+            transition: background 0.3s, color 0.2s, transform 0.15s;
+            display: inline-block;
         }
 
         a:hover {
-            background: linear-gradient(90deg, #74b2e2, #3b91d1);
-            transform: scale(1.05);
+            background: #fff176;
+            color: #1d4350;
+            transform: scale(1.06);
+        }
+
+        .player-container {
+            background: rgba(32, 35, 42, 0.96);
+            margin: 24px auto 40px auto;
+            padding: 18px 0 9px 0;
+            border-radius: 18px;
+            width: 340px;
+            box-shadow: 0 0 16px #ff9f4355;
+        }
+
+        audio {
+            width: 89%;
+            margin: 12px 0;
+            outline: none;
         }
 
         img {
-            margin-top: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            margin-top: 23px;
+            border-radius: 18px;
+            box-shadow: 0 0 30px #a4393166;
+            width: 280px;
         }
 
         footer {
-            margin-top: 30px;
-            padding: 15px;
-            background: linear-gradient(90deg, #b1470e, #d46c2a);
-            position: relative;
-        }
-
-        .music-control {
-            margin-top: 15px;
-        }
-
-        .music-btn {
-            background: #fff;
-            color: #b1470e;
-            font-weight: bold;
-            border: none;
-            padding: 10px 16px;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .music-btn:hover {
-            background: #ffd59b;
-            transform: scale(1.05);
+            margin-top: 45px;
+            padding: 18px 0;
+            background: #20232a;
+            color: #ff9f43;
+            font-size: 1.09em;
+            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Tik Tok mUsic хиты</h1>
+        <h1>Музыкальный Микс 2025</h1>
     </header>
 
-    <p>Подборка:</p>
+    <p>Свежие и популярные треки для твоего настроения:</p>
 
-    <h2>✨ Топ-3</h2>
+    <h2>🔥 ТОП-5 весны</h2>
     <ul>
         <li>
             <a href="https://youtu.be/-QZML09vv6A?si=6RPmCgBdmZcvVdJu" target="_blank">
-                Dasdinlovee - KETPE
+                Dasdinlovee — KETPE
             </a>
         </li>
         <li>
-            <a href="https://youtu.be/iMGRJKF0tGA?si=hiw_I6kyN1J2jB58" target="_blank">
-                Кайрат Нуртас - Алматынын тундеры ай
+            <a href="https://youtu.be/G41L_pnNqVc" target="_blank">
+                Zivert — WAKE UP!
             </a>
         </li>
         <li>
             <a href="https://youtu.be/eCT4puTiApo?si=1O6YO941c-7txR7N" target="_blank">
-                M'Dee - Нужна
+                M'Dee — Нужна
+            </a>
+        </li>
+        <li>
+            <a href="https://youtu.be/aJOTlE1K90k" target="_blank">
+                Maroon 5 — Girls Like You
+            </a>
+        </li>
+        <li>
+            <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">
+                Rick Astley — Never Gonna Give You Up
             </a>
         </li>
     </ul>
 
-    <h2>🎶 Альбом обложка</h2>
-    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d2/10/84/d210843f-6c03-2624-6318-6b206cdb4622/cover.jpg/416x416bb.webp" 
-         alt="KETPE" width="300">
+    <h2>🎧 Слушать прямо тут</h2>
+    <div class="player-container">
+        <strong>Zivert — WAKE UP!</strong><br>
+        <audio controls>
+            <source src="https://cdn.pixabay.com/audio/2022/10/16/audio_12da595dcd.mp3" type="audio/mp3">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+        <br>
+        <strong>Dasdinlovee — KETPE</strong><br>
+        <audio controls>
+            <source src="https://cdn.pixabay.com/audio/2023/03/27/audio_127b1fa7f4.mp3" type="audio/mp3">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+        <br>
+        <strong>M'Dee — Нужна (remix)</strong><br>
+        <audio controls>
+            <source src="https://cdn.pixabay.com/audio/2023/03/27/audio_12e3b66817.mp3" type="audio/mp3">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+    </div>
+
+    <h2>🎨 Обложка дня</h2>
+    <img src="https://i.imgur.com/6Q9QbBW.jpg"
+         alt="Zivert WAKE UP!">
 
     <footer>
-        <p>botayym</p>
-        <div class="music-control">
-            <audio id="bg-audio" src="music.mp3" loop></audio>
-            <button class="music-btn" id="music-btn">🎵 Включить музыку</button>
-        </div>
+        <p>by nurka431 | 2025</p>
     </footer>
-
-    <script>
-        const audio = document.getElementById('bg-audio');
-        const btn = document.getElementById('music-btn');
-
-        btn.addEventListener('click', () => {
-            if (audio.paused) {
-                audio.play().catch(err => console.log('Autoplay blocked', err));
-                btn.textContent = "🔇 Выключить музыку";
-            } else {
-                audio.pause();
-                btn.textContent = "🎵 Включить музыку";
-            }
-        });
-    </script>
 </body>
 </html>
- <p>botayym</p>
 
 
